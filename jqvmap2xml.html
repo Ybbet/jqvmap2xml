@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>JQVMAP vers XML</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="jqvmap/dist/jquery.vmap.js" type="text/javascript"></script>
+	<script src="javascript/jqvmap2xml.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="jqvmap/dist/jqvmap.min.css" />
+	<link rel="stylesheet" href="css/default.css" />
+	<script src="jqvmap/dist/maps/jquery.vmap.algeria.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/jquery.vmap.argentina.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/jquery.vmap.brazil.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/jquery.vmap.canada.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/jquery.vmap.europe.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/jquery.vmap.france.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/jquery.vmap.germany.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/jquery.vmap.greece.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/jquery.vmap.iran.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/jquery.vmap.iraq.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/jquery.vmap.russia.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/jquery.vmap.tunisia.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/jquery.vmap.turkey.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/jquery.vmap.usa.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/jquery.vmap.world.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/continents/jquery.vmap.africa.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/continents/jquery.vmap.asia.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/continents/jquery.vmap.australia.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/continents/jquery.vmap.europe.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/continents/jquery.vmap.north-america.js" type="text/javascript"></script>
+	<script src="jqvmap/dist/maps/continents/jquery.vmap.south-america.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function (){
+					jQuery('#map_dz_fr').vectorMap({
+						map: 'dz_fr',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_argentina_en').vectorMap({
+						map: 'argentina_en',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_brazil_br').vectorMap({
+						map: 'brazil_br',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_canada_en').vectorMap({
+						map: 'canada_en',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_europe_en').vectorMap({
+						map: 'europe_en',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_france_fr').vectorMap({
+						map: 'france_fr',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_germany_en').vectorMap({
+						map: 'germany_en',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_greece').vectorMap({
+						map: 'greece',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_iran_ir').vectorMap({
+						map: 'iran_ir',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_iraq').vectorMap({
+						map: 'iraq',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_russia_en').vectorMap({
+						map: 'russia_en',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_tunisia').vectorMap({
+						map: 'tunisia',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_turkey').vectorMap({
+						map: 'turkey',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_usa_en').vectorMap({
+						map: 'usa_en',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_world_en').vectorMap({
+						map: 'world_en',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_africa_en').vectorMap({
+						map: 'africa_en',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_asia_en').vectorMap({
+						map: 'asia_en',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_australia_en').vectorMap({
+						map: 'australia_en',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_continent_europe_en').vectorMap({
+						map: 'europe_en',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_north-america_en').vectorMap({
+						map: 'north-america_en',
+						enableZoom: true,
+						showTooltip: true
+					});
+					jQuery('#map_south-america_en').vectorMap({
+						map: 'south-america_en',
+						enableZoom: true,
+						showTooltip: true
+					});
+		});
+	</script>
+</head>
+<body>
+<div class="container">
+	<div class="header clearfix">
+		<nav>
+			<ul class="nav nav-pills pull-right">
+				<li role="presentation"><a href="index.html">Accueil</a></li>
+				<li role="presentation" class="active"><a href="#">jqvmap2xml</a></li>
+				<li role="presentation"><a href="svg2xml.html">svg2xml</a></li>
+			</ul>
+		</nav>
+		<h3 class="text-muted">JQVMAP2XML</h3>
+	</div>
+	<div class="row">
+		<div class="col-md-12"><h1>JQVMAP2XML</h1></div>
+		<div class="col-md-4">
+			<form method="post" class="form-horizontal" role="form" id="form_carte_jqvmap">
+				<div class="form-group">
+					<h3>Choisir la carte désirée</h3>
+				</div>
+				<div class="form-group">
+					<label for="carte_jqvmap" class="col-sm-3 control-label">Liste :</label>
+					<div class="col-sm-9">
+						<select name="carte" id="carte_jqvmap" class="form-control">
+							<option value=""> -- Select One --</option>
+							<option value="dz_fr">Algeria</option>
+							<option value="argentina_en">Argentina</option>
+							<option value="brazil_br">Brazil</option>
+							<option value="canada_en">Canada</option>
+							<option value="europe_en">Europe</option>
+							<option value="france_fr">France</option>
+							<option value="germany_en">Germany</option>
+							<option value="greece">Greece</option>
+							<option value="iran_ir">Iran</option>
+							<option value="iraq">Iraq</option>
+							<option value="russia_en">Russia</option>
+							<option value="tunisia">Tunisia</option>
+							<option value="turkey">Turkey</option>
+							<option value="usa_en">USA</option>
+							<option value="world_en">World</option>
+							<option value="africa_en">Continent : Africa</option>
+							<option value="asia_en">Continent : Asia</option>
+							<option value="australia_en">Continent : Australia</option>
+							<option value="europe_en">Continent : Europe</option>
+							<option value="north-america_en">Continent : North-America</option>
+							<option value="south-america_en">Continent : South-America</option>
+						</select>
+					</div>
+
+				</div>
+			</form>
+		</div>
+		<div class="col-md-8">
+			<div class="panel-group" id="liste_carte_jqvmap">
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_dz_fr">
+						<h4 class="panel-title"><a href="#panel_body_dz_fr" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="true">Algeria</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_dz_fr">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_dz_fr"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_argentina_en">
+						<h4 class="panel-title"><a href="#panel_body_argentina_en" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="true">Argentina</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_argentina_en">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_argentina_en"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_brazil_br">
+						<h4 class="panel-title"><a href="#panel_body_brazil_br" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Brazil</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_brazil_br">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_brazil_br"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_canada_en">
+						<h4 class="panel-title"><a href="#panel_body_canada_en" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Canada</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_canada_en">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_canada_en"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_europe_en">
+						<h4 class="panel-title"><a href="#panel_body_europe_en" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Europe</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_europe_en">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_europe_en"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_france_fr">
+						<h4 class="panel-title"><a href="#panel_body_france_fr" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">France</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_france_fr">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_france_fr"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_germany_en">
+						<h4 class="panel-title"><a href="#panel_body_germany_en" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Germany</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_germany_en">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_germany_en"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_greece">
+						<h4 class="panel-title"><a href="#panel_body_greece" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Greece</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_greece">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_greece"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_iran_ir">
+						<h4 class="panel-title"><a href="#panel_body_iran_ir" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Iran</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_iran_ir">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_iran_ir"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_iraq">
+						<h4 class="panel-title"><a href="#panel_body_iraq" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Iraq</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_iraq">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_iraq"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_russia_en">
+						<h4 class="panel-title"><a href="#panel_body_russia_en" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Russia</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_russia_en">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_russia_en"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_tunisia">
+						<h4 class="panel-title"><a href="#panel_body_tunisia" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Tunisia</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_tunisia">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_tunisia"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_turkey">
+						<h4 class="panel-title"><a href="#panel_body_turkey" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Turkey</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_turkey">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_turkey"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_usa_en">
+						<h4 class="panel-title"><a href="#panel_body_usa_en" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">USA</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_usa_en">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_usa_en"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_world_en">
+						<h4 class="panel-title"><a href="#panel_body_world_en" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">World</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_world_en">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_world_en"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_africa_en">
+						<h4 class="panel-title"><a href="#panel_body_africa_en" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Continent : Africa</a></h4>
+						<h4 class="panel-title"></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_africa_en">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_africa_en"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_asia_en">
+						<h4 class="panel-title"><a href="#panel_body_asia_en" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Continent : Asia</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_asia_en">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_asia_en"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_australia_en">
+						<h4 class="panel-title"><a href="#panel_body_australia_en" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Continent : Australia</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_australia_en">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_australia_en"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_continent_europe_en">
+						<h4 class="panel-title"><a href="#panel_body_continent_europe_en" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Continent : Europe</a></h4>
+						<h4 class="panel-title"></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_continent_europe_en">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_continent_europe_en"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_north-america_en">
+						<h4 class="panel-title"><a href="#panel_body_north-america_en" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Continent : North-America</a></h4>
+						<h4 class="panel-title"></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_north-america_en">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_north-america_en"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading" id="panel_head_south-america_en">
+						<h4 class="panel-title"><a href="#panel_body_south-america_en" data-parent="#liste_carte_jqvmap" data-toggle="collapse" class="" aria-expanded="false">Continent : South-America</a></h4>
+					</div>
+					<div class="panel-collapse collapse in" id="panel_body_south-america_en">
+						<div class="panel-body">
+							<div class="map" style="width:750px; height:750px;" id="map_south-america_en"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
