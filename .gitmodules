@@ -1,0 +1,3 @@
+[submodule "jqvmap"]
+	path = jqvmap
+	url = https://github.com/Ybbet/jqvmap.git
